@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen w-screen overflow-x-hidden">
+    <header class="py-6 bg-header relative before:absolute before:bg-black/30 before:inset-0">
+        <div class="container mx-auto px-10">
+            <nav class=" flex items-center justify-between border-b pb-4 z-20">
+                <a href="/" class="z-20"><img class="h-11" src="images/logo.svg" alt="company_logo"></a>
+
+                <ul class="lg:ml-10 lg:mt-0 mt-10 items-center gap-20 lg:flex text-sm ">
+                    <li class="nav-link active-link"><a href="/">Home</a></li>
+                    <li class="nav-link"><a href="/">Blog</a></li>
+                    <li class="nav-link"><a href="/">Categories</a></li>
+                    <li class="nav-link"><a href="/">Contact</a></li>
+                </ul>
+                <button
+                    class="z-20 uppercase tracking-widest text-white bg-black/70 rounded-lg py-1 px-5 hover:bg-transparent hover:bg-green transition-colors">Log
+                    in</button>
+            </nav>
+            <div class="grid place-items-center max-w-screen-md mx-auto pt-20 pb-5 gap-10">
+                <form class="w-full relative">
+                    <input
+                        class="font-medium placeholder:font-normal w-full py-3 pr-8 pl-9 rounded-lg outline-none focus:ring-2 focus:ring-green hover:ring-2 hover:ring-green transition-colors"
+                        type="text" placeholder="Search amount thousands of existing tourist sites in Cameroun...">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-3.5 left-2 text-gray-500"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </form>
+                <h1 class="text-5xl text-white z-20 text-center">Join the community now</h1>
+                <div class="btn-container group ease-in">
+                    <button class="slanted-button btn-text">join</button>
+                    <button class="slanted-button btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-45 z-20" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container mx-auto flex items-center justify-between mt-20">
+        <img src="images/picture_1.png" alt="picture_1">
+        <article>
+            <h3 class="text-4xl pb-2">Our goals</h3>
+            <div class="text-base font-text mb-9">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare ultrices
+                    platea tempus,lectus pharetra praesent proin viverra nibh. Ut enim iaculis nibh id. Tortor lorem
+                    egestas
+                    consectetur non a.</p>
+                <br>
+                <p>ultrices platea tempus, lectus pharetra praesent proin viverra nibh. Ut enim iaculis nibh id. Tortor
+                    lorem egestas consectetur non a.</p>
+            </div>
+            <div class="btn-container group ease-in">
+                <button class="slanted-button btn-text">more</button>
+                <button class="slanted-button btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-45 z-20" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+        </article>
+    </section>
+    <section class="container mx-auto px-10">
+        <div class="flex gap-10">
+            <h3 class="text-4xl">The best tourist sites & <br> collectibles objects</h3>
+            <article class="flex-1">
+                <p class="text-base font-text mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+                    ultrices
+                    platea tempus, lectus pharetra praesent proin viverra nibh. Ut enim iaculis nibh id. Tortor lorem
+                    egestas consectetur non a.
+                    ultrices platea tempus, lectus pharetra praesent proin viverra nibh. Ut enim iaculis nibh id. Tortor
+                    lorem egestas consectetur non a. </p>
+                <div class="btn-container group ease-in">
+                    <button class="slanted-button btn-text">book a trip</button>
+                    <button class="slanted-button btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-45 z-20" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </article>
+        </div>
+        <div class="main-carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <img src="images/picture_2.png" alt="picture_2">
+                <div class="img-text">
+                    <h4 class="text-2xl">Fako Mountain</h4>
+                    <p class="font-text text-lg">South-west region, Fako</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/picture_3.png" alt="picture_3">
+                <div class="img-text">
+                    <h4 class="text-2xl">Waza park</h4>
+                    <p class="font-text text-lg">Extreme north region, Waza</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img class="rounded-lg h-96 w-96 object-cover" src="images/picture_7.jpeg" alt="picture_7">
+                <div class="img-text">
+                    <h4 class="text-2xl">Maritime museum</h4>
+                    <p class="font-text text-lg">Littoral region, Douala</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h3 class="text-4xl mb-10"> Visit Mboa is trusted by multiple agencies</h3>
+            <div class="flex gap-16 justify-center">
+                <img class="h-9" src="images/eventbrite.png" alt="eventbrite">
+                <img class="h-9" src="images/google-maps.png" alt="google-maps">
+                <img class="h-9" src="images/pinterest.png" alt="pinterest">
+                <img class="h-9" src="images/documentum.png" alt="documentum">
+                <img class="h-9" src="images/docusign.png" alt="docusign">
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-10 mt-14">
+        <div class="flex gap-10">
+            <h3 class="text-4xl">Blogs & articles</h3>
+            <p class="font-text text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare ultrices platea tempus, lectus pharetra
+                <br>
+                praesent proin viverra
+            </p>
+        </div>
+        <div class="grid grid-cols-3 mt-10 gap-7">
+            <article>
+                <img src="images/picture_4.png" alt="picture_4">
+                <h3 class="font-text text-4xl mt-1">Lorem Ipsum</h3>
+                <span class="text-xs"> Posted on Mar 2022</span>
+                <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare ultrices platea tempus,
+                    lectus
+                    pharetra praesent proin viverra </p>
+                <a class="font-medium hover:underline" href="/">Learn More</a>
+            </article>
+            <article>
+                <img src="images/picture_5.png" alt="picture_5">
+                <h3 class="font-text text-4xl mt-1">Lorem Ipsum</h3>
+                <span class="text-xs"> Posted on Mar 2022</span>
+                <p class="my-2 h-[70px]">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                <a class="font-medium hover:underline" href="/">Learn More</a>
+            </article>
+            <article>
+                <img src="images/picture_6.png" alt="picture_6">
+                <h3 class="font-text text-4xl mt-1">Lorem Ipsum</h3>
+                <span class="text-xs"> Posted on Mar 2022</span>
+                <p class="my-2 h-[70px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare ultrices platea
+                    tempus
+                </p>
+                <a class="font-medium hover:underline" href="/">Learn More</a>
+            </article>
+        </div>
+    </section>
+    <footer class="bg-black/90 p-10 mt-10">
+        <div class="container mx-auto px-10 flex justify-between">
+            <div class="space-y-4">
+                <h5 class="text-xl text-white">About Us</h5>
+                <p class="text-white/50 max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+                    ultrices platea
+                    tempus, lectus pharetra praesent proin viverra </p>
+                <div class="flex gap-5">
+                    <a href="/" class="socials"><img src="images/discord.svg" alt="discord"></a>
+                    <a href="/" class="socials"><img src="images/slack.svg" alt="slack"></a>
+                    <a href="/" class="socials"><img src="images/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-xl text-white">Quick Links</h5>
+                <div class="flex flex-col gap-3 justify-between">
+                    <a href="/" class="footer-link">Home</a>
+                    <a href="/" class="footer-link">Blog</a>
+                    <a href="/" class="footer-link">Categories</a>
+                    <a href="/" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-xl text-white">Contact Us</h5>
+                <p class="text-white/70">+237 673-780-093</>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-xl text-white">Subscribe to our <br> newsletter</h5>
+                <form class="flex gap-5 items-center">
+                    <input type="email" placeholder="Enter your email"
+                        class="font-medium placeholder:font-normal rounded-lg outline-none focus:ring-2 focus:ring-green hover:ring-2 hover:ring-green transition-colors px-3 py-1.5">
+                    <div class="btn-container group ease-in">
+                        <button class="slanted-button btn-text">Submit</button>
+                        <button class="slanted-button btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-45 z-20" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <p class="pt-10 text-white text-center">Designed By <span class="text-green">Christian Tal</span>. Coded by
+            <span class="text-green">Oluwafemi Olukoya</span>.
+        </p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

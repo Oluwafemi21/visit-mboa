@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+    @apply lg:text-white relative lg:after:absolute lg:after:left-0 lg:after:w-0 lg:after:h-[4px] lg:after:-bottom-[29px] lg:after:bg-green lg:hover:after:w-full lg:hover:after:transition-[width] hover:after:duration-300 hover:after:ease-in-out pb-4 lg:pb-0 text-sm cursor-pointer text-white font-bold lg:font-medium;
+}
+
+.active-link {
+    @apply after:w-full
+}
+
+.btn-container {
+    @apply flex justify-center rounded-lg w-[160px] gap-5 hover:gap-0 hover:bg-green hover:transition-all duration-200
+}
+
+.slanted-button {
+    @apply cursor-pointer text-center bg-green border border-green relative pointer-events-auto z-20 h-9 text-white text-sm after:block after:absolute after:w-4 after:h-9 after:-top-px after:rounded after:z-10 after:border after:border-green after:-skew-x-[25deg] group-hover:text-white
+}
+
+.btn-text {
+    @apply w-[140px] px-1 font-text rounded-lg uppercase rounded-tr-none font-bold after:bg-green after:border-l-0 after:-right-2 after:rounded-tl-none after:rounded-bl-none group-hover:rounded-br-none group-hover:w-full group-hover:rounded-tr-none group-hover:border-r-0
+}
+
+.btn-icon {
+    @apply w-11 rounded-lg p-1 rounded-bl-none after:bg-green after:border-r-0 after:-left-2 after:rounded-tr-none after:rounded-br-none group-hover:rounded-tl-none group-hover:border-l-0
+}
+
+.img-text{
+    @apply px-8 pb-7 absolute bottom-0 text-white;
+}
+
+.socials{
+    @apply h-6 w-6 rounded-full p-1 border border-white/50 flex items-center justify-center;
+}
+
+.footer-link{
+    @apply text-white font-medium hover:text-green;
+}
+.main-carousel{
+    @apply my-20
+}
+
+.carousel-cell {
+    position:relative;
+    margin-right: 10px;
+  }
+
+  /* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  .flickity-page-dots{
+    display: none;
+  }

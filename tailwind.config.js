@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins"],
         text: ["Open Sans"],
+      },
+      boxShadow: {
+        '3xl': '0 0 0 10000px rgba(0,0,0,0.75)',
       }
     },
   },

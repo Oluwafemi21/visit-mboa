@@ -5,15 +5,38 @@
 @tailwind utilities;
 
 .nav-link {
-    @apply lg:text-white relative lg:after:absolute lg:after:left-0 lg:after:w-0 lg:after:h-[4px] lg:after:-bottom-[29px] lg:after:bg-green lg:hover:after:w-full lg:hover:after:transition-[width] hover:after:duration-300 hover:after:ease-in-out pb-4 lg:pb-0 text-sm cursor-pointer text-white font-bold lg:font-medium;
+    @apply md:text-white relative md:pb-0 md:after:absolute md:after:left-0 md:after:w-0 md:after:h-[4px] md:after:-bottom-[29px] md:after:bg-green md:hover:after:w-full md:hover:after:transition-[width] hover:after:duration-300 hover:after:ease-in-out pb-4 md:pb-0 text-lg md:text-sm cursor-pointer text-black font-bold md:font-medium;
+}
+
+.nav-link a{
+    @apply w-full block sm:w-auto sm:inline
 }
 
 .active-link {
     @apply after:w-full
 }
 
+.menu-toggle{
+    @apply md:hidden block
+}
+
+.sidenav{
+    @apply md:relative md:left-0 md:opacity-100 md:min-h-0 md:animate-none md:bg-transparent bg-white md:p-0 fixed -left-full p-10 top-0 w-[75%] md:w-auto z-30  min-h-screen md:flex md:shadow-none shadow-3xl transition duration-200 opacity-0;
+}
+.show{
+    @apply left-0 opacity-100;
+}  
+
+.icon{
+    @apply cursor-pointer lg:hidden text-white focus:text-green active:text-green transition ease-in duration-150 hover:text-green hover:bg-white h-8 w-8 rounded-full
+}
+
+.active-icon{
+    @apply text-green bg-white grid place-items-center 
+}
+
 .btn-container {
-    @apply flex justify-center rounded-lg w-[160px] gap-5 hover:gap-0 hover:bg-green hover:transition-all duration-200
+    @apply flex justify-center rounded-lg w-[160px] gap-5 hover:gap-0 hover:bg-green hover:transition-all duration-200 
 }
 
 .slanted-button {
@@ -40,8 +63,9 @@
     @apply text-white font-medium hover:text-green;
 }
 .main-carousel{
-    @apply my-20
+    @apply my-20 w-full
 }
+
 
 .carousel-cell {
     position:relative;

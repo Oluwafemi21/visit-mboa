@@ -30,5 +30,6 @@ navLink.forEach(nav => {
         menu.classList.add('grid');
         menu.classList.remove('hidden')
         closeBtn.classList.remove('active-icon');
+        document.body.style.position = 'relative'
     })
 })

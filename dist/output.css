@@ -830,6 +830,18 @@ video {
   background-image: url('/images/background-image.png');
 }
 
+.bg-auto{
+  background-size: auto;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
